@@ -1,7 +1,12 @@
 <h3>How to create the container</h3>
-docker build --tag cmdstan .
 
+```bash
+docker build --tag cmdstan .
+```
+
+```bash
 docker run -e JUPYTER_TOKEN="jupyter_notebook_token" -dp 8888:8888 cmdstan
+```
 
 <h3>Open the Jupyter notebook</h3>
 to open Jupyter Notebook go to:  http://localhost:8888/tree?token=jupyter_notebook_token
